@@ -15,6 +15,7 @@ import com.imaginea.collectvalue.collect.Collect;
 import com.imaginea.collectvalue.collect.ResponseFormat;
 import com.imaginea.collectvalue.factory.CollectFactory;
 import com.imaginea.collectvalue.test.data.CollectJsonTestData;
+import com.jayway.jsonpath.internal.function.text.Length;
 
 public class CollectJsonTest implements CollectJsonTestData {
 
@@ -80,4 +81,164 @@ public class CollectJsonTest implements CollectJsonTestData {
 			assertTrue(false);
 		}
 	}
+
+	@Test
+	public void testCollectFileListOfString5() {
+		try {
+			Map<String, Object> valueMap = collectJson.collect(SAMPLE_JSON_FILE, INPUT_PATH_5);
+			Object actualResult = valueMap.entrySet().stream().findFirst().get().getValue();
+			assertThat(actualResult, instanceOf(JSONArray.class));
+			assertThat(((JSONArray) actualResult).get(0), instanceOf(JSONObject.class));
+			assertTrue(OUTPUT_EXPECTED_5.equals(actualResult.toString()));
+		} catch (IOException e) {
+			assertTrue(false);
+		}
+	}
+
+	@Test
+	public void testCollectFileListOfString6() {
+		try {
+			Map<String, Object> valueMap = collectJson.collect(SAMPLE_JSON_FILE, INPUT_PATH_6);
+			Object actualResult = valueMap.entrySet().stream().findFirst().get().getValue();
+			assertThat(actualResult, instanceOf(JSONArray.class));
+			assertThat(((JSONArray) actualResult).get(0), instanceOf(JSONObject.class));
+			assertTrue(OUTPUT_EXPECTED_6.equals(actualResult.toString()));
+		} catch (IOException e) {
+			assertTrue(false);
+		}
+	}
+
+	@Test
+	public void testCollectFileListOfString7() {
+		try {
+			Map<String, Object> valueMap = collectJson.collect(SAMPLE_JSON_FILE, INPUT_PATH_7);
+			Object actualResult = valueMap.entrySet().stream().findFirst().get().getValue();
+			assertThat(actualResult, instanceOf(JSONArray.class));
+			assertTrue(((JSONArray) actualResult).length() == 2);
+			assertTrue(OUTPUT_EXPECTED_7.equals(actualResult.toString()));
+		} catch (IOException e) {
+			assertTrue(false);
+		}
+	}
+
+	@Test
+	public void testCollectFileListOfString8() {
+		try {
+			Map<String, Object> valueMap = collectJson.collect(SAMPLE_JSON_FILE, INPUT_PATH_8);
+			Object actualResult = valueMap.entrySet().stream().findFirst().get().getValue();
+			assertThat(actualResult, instanceOf(JSONArray.class));
+			assertTrue(OUTPUT_EXPECTED_8.equals(actualResult.toString()));
+		} catch (IOException e) {
+			assertTrue(false);
+		}
+	}
+
+	@Test
+	public void testCollectFileListOfString9() {
+		try {
+			Map<String, Object> valueMap = collectJson.collect(SAMPLE_JSON_FILE, INPUT_PATH_9);
+			Object actualResult = valueMap.entrySet().stream().findFirst().get().getValue();
+			assertThat(actualResult, instanceOf(JSONArray.class));
+			assertTrue(OUTPUT_EXPECTED_9.equals(actualResult.toString()));
+		} catch (IOException e) {
+			assertTrue(false);
+		}
+	}
+
+	@Test
+	public void testCollectFileListOfString10() {
+		try {
+			Map<String, Object> valueMap = collectJson.collect(SAMPLE_JSON_FILE, INPUT_PATH_10);
+			Object actualResult = valueMap.entrySet().stream().findFirst().get().getValue();
+			assertThat(actualResult, instanceOf(JSONArray.class));
+			assertTrue(OUTPUT_EXPECTED_10.equals(actualResult.toString()));
+		} catch (IOException e) {
+			assertTrue(false);
+		}
+	}
+
+	@Test
+	public void testCollectFileListOfString11() {
+		try {
+			Map<String, Object> valueMap = collectJson.collect(SAMPLE_JSON_FILE, INPUT_PATH_11);
+			Object actualResult = valueMap.entrySet().stream().findFirst().get().getValue();
+			assertThat(actualResult, instanceOf(JSONArray.class));
+			assertTrue(OUTPUT_EXPECTED_11.equals(actualResult.toString()));
+		} catch (IOException e) {
+			assertTrue(false);
+		}
+	}
+
+	@Test
+	public void testCollectFileListOfString12() {
+		try {
+			Map<String, Object> valueMap = collectJson.collect(SAMPLE_JSON_FILE, INPUT_PATH_12);
+			Object actualResult = valueMap.entrySet().stream().findFirst().get().getValue();
+			assertThat(actualResult, instanceOf(JSONArray.class));
+			assertTrue(OUTPUT_EXPECTED_12.equals(actualResult.toString()));
+		} catch (IOException e) {
+			assertTrue(false);
+		}
+	}
+
+	@Test
+	public void testCollectFileListOfString13() {
+		try {
+			Map<String, Object> valueMap = collectJson.collect(SAMPLE_JSON_FILE, INPUT_PATH_13);
+			Object actualResult = valueMap.entrySet().stream().findFirst().get().getValue();
+			assertThat(actualResult, instanceOf(JSONArray.class));
+			assertTrue(OUTPUT_EXPECTED_13.equals(actualResult.toString()));
+		} catch (IOException e) {
+			assertTrue(false);
+		}
+	}
+
+	@Test
+	public void testCollectFileListOfString14() {
+		try {
+			Map<String, Object> valueMap = collectJson.collect(SAMPLE_JSON_FILE, INPUT_PATH_14);
+			Object actualResult = valueMap.entrySet().stream().findFirst().get().getValue();
+			assertThat(actualResult, instanceOf(JSONArray.class));
+			assertTrue(OUTPUT_EXPECTED_14.equals(actualResult.toString()));
+		} catch (IOException e) {
+			assertTrue(false);
+		}
+	}
+
+	@Test
+	public void testCollectFileListOfString15() {
+		try {
+			Map<String, Object> valueMap = collectJson.collect(SAMPLE_JSON_FILE, INPUT_PATH_15);
+			Object actualResult = valueMap.entrySet().stream().findFirst().get().getValue();
+			assertThat(actualResult, instanceOf(JSONArray.class));
+			assertTrue(OUTPUT_EXPECTED_15.equals(actualResult.toString()));
+		} catch (IOException e) {
+			assertTrue(false);
+		}
+	}
+
+	@Test
+	public void testCollectFileListOfString16() {
+		try {
+			Map<String, Object> valueMap = collectJson.collect(SAMPLE_JSON_FILE, INPUT_PATH_16);
+			Object actualResult = valueMap.entrySet().stream().findFirst().get().getValue();
+			assertThat(actualResult, instanceOf(JSONArray.class));
+			assertTrue(OUTPUT_EXPECTED_16.equals(actualResult.toString()));
+		} catch (IOException e) {
+			assertTrue(false);
+		}
+	}
+
+	@Test
+	public void testCollectFileListOfString17() {
+		try {
+			Map<String, Object> valueMap = collectJson.collect(SAMPLE_JSON_FILE, INPUT_PATH_17);
+			Object actualResult = valueMap.entrySet().stream().findFirst().get().getValue();
+			assertThat(actualResult, instanceOf(JSONArray.class));
+			assertTrue(OUTPUT_EXPECTED_17.equals(actualResult.toString()));
+		} catch (IOException e) {
+			assertTrue(false);
+		}
+	}
+
 }
