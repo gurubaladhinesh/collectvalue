@@ -1,18 +1,21 @@
 package com.imaginea.collectvalue;
 
-import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
 
-import com.imaginea.collectvalue.collect.Collect;
-import com.imaginea.collectvalue.collect.ResponseFormat;
-import com.imaginea.collectvalue.factory.CollectFactory;
+import com.imaginea.collectvalue.auth.AuthHeader;
+import com.imaginea.collectvalue.auth.AuthType;
+import com.imaginea.collectvalue.response.ApiClient;
+import com.imaginea.collectvalue.response.RestApiClient;
 
 public class CollectValueMain {
 
 	public static void main(String[] args) throws IOException {
+
+		String url = "https://jsonplaceholder.typicode.com/todos/1";
+
+		ApiClient client = new RestApiClient();
+
+		client.getResponse(url, AuthHeader.constructAuthHeaderValue(AuthType.BASIC_AUTH, "guru:passw0rd"));
 
 	}
 }
